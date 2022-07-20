@@ -16,7 +16,7 @@ body {
 }
 
 /*==================================
-    Slider-area-start 
+    Slider area start 
 ===================================*/
 .slider-area {
     background-color: #161616;
@@ -76,16 +76,15 @@ body {
 }
 
 /*==================================
-    Slider-area-end 
+    Slider area end 
 ===================================*/
 
 /*==================================
-    Blog-area-start 
+    Blog area start 
 ===================================*/
 
 .blog-area {
     display: flex;
-    /* background-color: red; */
     margin-top: 80px;
 }
 
@@ -137,7 +136,6 @@ body {
 .single-blog {
     width: 263px;
     height: 310px;
-    /* background-color: #161616; */
     border: 1px solid #fff;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -172,7 +170,6 @@ body {
 }
 
 .time-ago {
-    /* background-color: red; */
     margin-left: 20px;
 }
 
@@ -187,17 +184,16 @@ body {
 }
 
 /*==================================
-    Blog-area-end 
+    Blog area end 
 ===================================*/
 /*==================================
-    Footer-area-start 
+    Footer area start 
 ===================================*/
 
 .bg-color {
     background-color: black;
     color: white;
     padding: 100px 0;
-    margin-bottom: 300px;
 }
 
 .footer-area {
@@ -207,7 +203,6 @@ body {
 }
 
 .footer-area h3 {
-    /* background-color: red; */
     text-align: center;
     margin-bottom: 50px;
     font-size: 30px;
@@ -224,7 +219,6 @@ body {
 .footer-menu ul {
     display: flex;
     justify-content: center;
-    /* background-color: red; */
     list-style: none;
 }
 
@@ -254,22 +248,18 @@ body {
 }
 
 /*==================================
-    Footer-area-end 
+    Footer area end 
 ===================================*/
 
-
-
-
-
-
-
-/* Tablet style */
+/* {{{{{{{{{{{{{{{{{{{{{{{{
+    Tablet style 
+}}}}}}}}}}}}}}}}}}}}}}}}}}*/
 
 @media screen and (min-width:577px) and (max-width:992px) {
 
-    /*==================================
-        Slider-area-start 
-    ===================================*/
+    /*..................................
+        Slider area start 
+    ....................................*/
     .slider-area {
         padding: 25px 0 0 48px;
     }
@@ -299,13 +289,13 @@ body {
         height: 280px;
     }
 
-    /*==================================
-        Slider-area-end 
-    ===================================*/
+    /*.................................
+        Slider area end 
+    ..................................*/
 
-    /*==================================
-        Blog-area-start 
-    ===================================*/
+    /*.....................................
+        Blog area start 
+    ......................................*/
 
     .blog-area {
         flex-direction: column;
@@ -346,12 +336,14 @@ body {
         margin-right: 25px;
     }
 
-    /*==================================
-        Blog-area-end 
-    ===================================*/
-    /*==================================
-        Footer-area-start 
-    ===================================*/
+    /* Right side end */
+
+    /*....................................
+        Blog area end 
+    ....................................*/
+    /*...................................
+        Footer area start 
+    .....................................*/
 
     .bg-color {
         padding: 30px 0;
@@ -375,25 +367,148 @@ body {
         padding: 10px 10px;
     }
 
-    /*==================================
-        Footer-area-end 
-    ===================================*/
+    /*...................................
+        Footer area start 
+    .....................................*/
 }
 
-/* Mobile style */
+/*[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+    Mobile style 
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]*/
 @media screen and (max-width:576px) {
+
+    /*******************************
+        Slider area start 
+     *******************************/
     .slider-area {
-        background-color: red;
+        padding: 25px 25px 0 25px;
+        flex-direction: column;
     }
 
+    .slider-left-side {
+        width: 100%;
+        padding-top: 25px;
+
+    }
+
+    .slider-left-side h1 {
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .slider-left-side p {
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .center-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .slider-left-side button a {
+        font-size: 17px;
+    }
+
+    .slider-Right-side {
+        width: 262px;
+        height: 280px;
+        margin-left: 13px;
+    }
+
+    /*******************************
+        Slider area end 
+    *******************************/
+    /******************************
+        Blog area start 
+     *****************************/
+    .blog-area {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    /* left side start */
+    .blog-left-side {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 0;
+        height: 175px;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    .blog-left-side button {
+        margin-bottom: 0;
+    }
+
+    .blog-left-side button a {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+
+    /* left side end */
+
+    /* Right side start */
     .blog-right-side {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
-}
+
+    .single-blog {
+        width: 295px;
+        height: 310px;
+        margin: 0 0 20px 10px;
+    }
+
+    /******************************
+        Blog area start 
+    *****************************/
+    /******************************
+        Footer area start 
+    *****************************/
+    .bg-color {
+        padding: 30px 0;
+    }
 
 
-.margin {
-    height: 300px;
-    background-color: aqua;
+    .footer-area h3 {
+        margin-bottom: 20px;
+
+    }
+
+    .footer-area hr {
+        margin-bottom: 20px;
+    }
+
+    .footer-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu ul li {
+        margin-left: 0;
+        width: 200px;
+        text-align: center;
+    }
+
+    .footer-menu ul li a {
+        padding: 10px 10px;
+
+    }
+
+    .socal-media {
+        display: block;
+        margin-top: 15px;
+    }
+
+    /******************************
+        Footer area end 
+    *****************************/
 }
