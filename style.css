@@ -1,0 +1,85 @@
+/* universal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body common style */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Slider-area */
+.slider-area {
+    background-color: #161616;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    padding: 50px 50px 0 50px;
+}
+
+.slider-left-side {
+    width: 60%;
+    /* background-color: red; */
+    padding-top: 70px;
+
+}
+
+.slider-left-side h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.slider-left-side p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.slider-left-side button {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #DD0000;
+}
+
+.slider-left-side button a {
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.slider-left-side button a i {
+    margin-left: 10px;
+}
+
+.slider-Right-side {
+    width: 550px;
+    height: 580px;
+    /* background-color: aqua; */
+}
+
+.slider-Right-side img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer start */
+.bg-color {
+    background-color: black;
+    color: white;
+}
+
+.footer-area {
+    width: 80%;
+    margin: auto;
+}
