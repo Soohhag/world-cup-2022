@@ -189,14 +189,211 @@ body {
 /*==================================
     Blog-area-end 
 ===================================*/
+/*==================================
+    Footer-area-start 
+===================================*/
 
-/* Footer start */
 .bg-color {
     background-color: black;
     color: white;
+    padding: 100px 0;
+    margin-bottom: 300px;
 }
 
 .footer-area {
     width: 80%;
     margin: auto;
+
+}
+
+.footer-area h3 {
+    /* background-color: red; */
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+
+}
+
+.footer-area hr {
+    height: 0.5px;
+    background-color: #161616;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.footer-menu ul {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    list-style: none;
+}
+
+.footer-menu ul li {
+    margin-left: 10px;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #A8A8A8;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 13px;
+
+}
+
+.socal-media {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socal-media a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #A8A8A8;
+}
+
+/*==================================
+    Footer-area-end 
+===================================*/
+
+
+
+
+
+
+
+/* Tablet style */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    /*==================================
+        Slider-area-start 
+    ===================================*/
+    .slider-area {
+        padding: 25px 0 0 48px;
+    }
+
+    .slider-left-side {
+        width: 53%;
+        padding-top: 32px;
+
+    }
+
+    .slider-left-side h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .slider-left-side p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .slider-left-side button a i {
+        margin-left: 10px;
+    }
+
+    .slider-Right-side {
+        width: 250px;
+        height: 280px;
+    }
+
+    /*==================================
+        Slider-area-end 
+    ===================================*/
+
+    /*==================================
+        Blog-area-start 
+    ===================================*/
+
+    .blog-area {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    /* left side start */
+    .blog-left-side {
+        display: flex;
+        background-color: #ffffff;
+        padding: 0;
+        height: 60px;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    .blog-left-side button {
+        margin-bottom: 0;
+    }
+
+    .blog-left-side button a {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+
+    /* left side end */
+
+    /* Right side start */
+    .blog-right-side {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-blog {
+        width: 295px;
+        height: 310px;
+        margin-right: 25px;
+    }
+
+    /*==================================
+        Blog-area-end 
+    ===================================*/
+    /*==================================
+        Footer-area-start 
+    ===================================*/
+
+    .bg-color {
+        padding: 30px 0;
+    }
+
+
+    .footer-area h3 {
+        margin-bottom: 20px;
+
+    }
+
+    .footer-area hr {
+        margin-bottom: 20px;
+    }
+
+    .footer-menu ul li {
+        margin-left: 0;
+    }
+
+    .footer-menu ul li a {
+        padding: 10px 10px;
+    }
+
+    /*==================================
+        Footer-area-end 
+    ===================================*/
+}
+
+/* Mobile style */
+@media screen and (max-width:576px) {
+    .slider-area {
+        background-color: red;
+    }
+
+    .blog-right-side {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.margin {
+    height: 300px;
+    background-color: aqua;
 }
