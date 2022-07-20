@@ -328,12 +328,13 @@ body {
     /* Right side start */
     .blog-right-side {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 
     .single-blog {
         width: 295px;
         height: 310px;
-        margin-right: 25px;
+        margin-right: 0;
     }
 
     /* Right side end */
